@@ -2,7 +2,7 @@
 
 > **Weather that speaks farmer.** Real-time conditions, 7-day forecasts, and AI-powered agronomic advice. Built for farmers across Africa.
 
-**Live demo:** _add your deployment URL here_
+**Live demo:** https://sky-shamba.vercel.app/
 
 ---
 
@@ -35,20 +35,20 @@ sky-shamba/
 │   ├── layout.tsx
 │   └── page.tsx                    # Landing page with search and quick picks
 ├── components/
-│   ├── dashboard/
-│   │   ├── current-weather.tsx     # Temperature card, stats grid, farming tip
-│   │   ├── hourly-strip.tsx        # Scrollable 12-hour view
-│   │   ├── forecast-chart.tsx      # Recharts ComposedChart
-│   │   ├── daily-strip.tsx         # 7-day emoji tile row
-│   │   ├── ai-insight.tsx          # Gemini summary card
-│   │   ├── tree-analyzer.tsx       # Drag-and-drop uploader + analysis results
-│   │   ├── dashboard-shell.tsx     # Layout wrapper used by the Suspense fallback
-│   │   └── skeleton-dashboard.tsx  # Loading skeleton
-│   └── providers.tsx               # TanStack Query client provider
+│   └── dashboard/
+│       ├── current-weather.tsx     # Temperature card, stats grid, farming tip
+│       ├── hourly-strip.tsx        # Scrollable 12-hour view
+│       ├── forecast-chart.tsx      # Recharts ComposedChart
+│       ├── daily-strip.tsx         # 7-day emoji tile row
+│       ├── ai-insight.tsx          # Gemini summary card
+│       ├── tree-analyzer.tsx       # Drag-and-drop uploader + analysis results
+│       ├── dashboard-shell.tsx     # Layout wrapper used by the Suspense fallback
+│       └── skeleton-dashboard.tsx  # Loading skeleton
 ├── lib/
 │   ├── api.ts                      # Typed fetch wrappers (queryFn for TanStack Query)
 │   ├── constants.ts                # API base URL, quick-pick locations
 │   ├── hooks.ts                    # useDebounce
+│   ├── providers.tsx               # TanStack Query client provider
 │   └── utils.ts                    # cn(), condition labels, UV index, farming tips
 └── types/
     └── weather.ts                  # TypeScript interfaces for all API shapes
